@@ -3,4 +3,5 @@ numpy
 joblib
 scikit-learn
 pytest
+pytest-mock
 pandas
