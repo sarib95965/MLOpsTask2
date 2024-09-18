@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingleLayerSVMNN Prediction</title>
+</head>
+<body>
+    <h1>Predict Iris Flower Class</h1>
+    <form action="/predict" method="post">
+        <label for="feature_1">Feature 1 (Sepal Length):</label>
+        <input type="number" step="any" name="feature_1" required><br><br>
+        <label for="feature_2">Feature 2 (Sepal Width):</label>
+        <input type="number" step="any" name="feature_2" required><br><br>
+        <label for="feature_3">Feature 3 (Petal Length):</label>
+        <input type="number" step="any" name="feature_3" required><br><br>
+        <label for="feature_4">Feature 4 (Petal Width):</label>
+        <input type="number" step="any" name="feature_4" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{ prediction }}</h2>
+</body>
+</html>
