@@ -17,7 +17,7 @@ def test_home(client):
     """Test the home page"""
     rv = client.get('/')
     assert rv.status_code == 200
-    assert b'Enter features for prediction' in rv.data  # Assuming there's a message like this on your index.html
+    assert b'Predict Iris Flower Class' in rv.data  # Assuming there's a message like this on your index.html
 
 
 def test_predict_valid_input(client, mocker):
