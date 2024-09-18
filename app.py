@@ -96,11 +96,11 @@ app = Flask(__name__)
 
 # Load the trained model
 svm = SingleLayerSVMNN()
-svm.LoadModel(filepath = "MLOpsTask2\svm_model.npz")
+svm.LoadModel(filepath = "svm_model.npz")
 
 
 # Load the saved scaler
-scaler = load('MLOpsTask2\scaler.joblib')
+scaler = load('scaler.joblib')
 
 @app.route('/')
 def home():
